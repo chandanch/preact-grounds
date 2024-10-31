@@ -5,6 +5,10 @@ class CustomButton extends Component {
 		console.log('component mounted');
 	}
 
+	componentWillUnmount() {
+		console.log('component unmounted');
+	}
+
 	render(props) {
 		return <button class="my-button">{props.children}</button>;
 	}

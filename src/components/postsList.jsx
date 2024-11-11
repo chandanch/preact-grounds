@@ -11,7 +11,13 @@ const PostsList = () => {
 	return (
 		<div>
 			{posts.map((post) => {
-				return <li key={post.id}>{post.text}</li>;
+				return (
+					<li key={post.id}>
+						{post.text}
+						<button>Add Post!</button>
+						<button>Delete Post!</button>
+					</li>
+				);
 			})}
 		</div>
 	);
